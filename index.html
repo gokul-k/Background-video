@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            margin: 0;
+        }
+        .default-full-page-background {
+            background-image: url(assets/images/videobackground.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100%;
+            position: absolute;
+            min-width: 100%;
+        }
+
+        .highlight {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            font-family: sans-serif;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+
+        a {
+            color: royalblue;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #5e86ff;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="default-full-page-background">
+
+        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=2DiBkvdU0BU',quality:'large',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+
+        <h1 class="highlight">It takes time to load youtube video as well as thumbnails.We can set a background picture.The background video plugin can be found <a href="http://pupunzi.com/mb.components/mb.YTPlayer/demo/demo.html" target="_blank">Here</a>.</h1>
+
+    </div>
+
+    <script src="jquery-2.2.1.js"></script>
+    <script src="javascripts/plugins/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript">
+        //trigerring youtube video and seating ready function
+        $("#bgndVideo").mb_YTPlayer().on("YTPReady", function () {
+            $('.default-full-page-background').css("background", "none");//On video player ready function, we can add customer jquery
+        });
+    </script>
+</body>
+</html>
