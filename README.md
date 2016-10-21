@@ -6,4 +6,4 @@ Code for Video playback during webpage load with jQuery Plugin
 
 ####Note: Need to enable unsafe scripts to view page
 
-![alt text](https://github.com/gokul-k/background-video/blob/master/enable_script.png)
+![alt text](https://github.com/gokul-k/background-video/blob/master/enable_script_1.png)
