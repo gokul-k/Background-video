@@ -2,7 +2,7 @@
 
 Code for Video playback during webpage load with jQuery Plugin
 
-*[Github.io Page](https://gokul-k.github.io/background-video/)*
+*[Demo Page](https://gokul-k.github.io/background-video/)*
 
 ####Note: Need to enable unsafe scripts to view page
 
